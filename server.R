@@ -17,9 +17,11 @@ shinyServer(function(input, output, session) {
     withProgress(message = 'Loading data', {
       
       if(input$adjust_delta == TRUE){
-        R = readRDS('data/data_adj.rda')
+        #R = readRDS('data/data_adj.rda')
+        R = readRDS('C:/ShinyApps/DNOX_3/data/data_adj.rda')
       } else {
-        R = readRDS('data/data.rda')
+        #R = readRDS('data/data.rda')
+        R = readRDS('C:/ShinyApps/DNOX_3/data/data.rda')
       }
       
       
